@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
+#root{
+  --lightBrown:#7f5539;
+  --brown:#43291f;
+  --title:'Gloria Hallelujah', cursive;
+  --text:'Didact Gothic', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-align: center; */
+  font-family: var(--text);
+  color: #fff;
+  background-color: #432818;
+}
+
+header{
+  background: url('./assets/876591.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+section{
+  padding: 0 5rem;
+}
+
+.title{
+  font-family: var(--title);
+  color: #ffd166;
+  font-size: 45px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+.seeker input{
+  width: 40rem;
+  padding: 10px 0;
+  background-color: var(--lightBrown);
+  color: #fff;
+  border: none;
+  text-align: center;
+}
+
+.seeker button{
+  padding: 10px;
+  width: 75px;
+  background-color: var(--brown);
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.seeker input:focus{
+  outline: none;
+}
+
+.seeker{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.name-location{
+  font-size: 30px;
+  color: #ffd166;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+}
+
+.location-info{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  font-size: 18px;
+}
+
+.yellow{
+  color: #e09f3e;
+}
+
+.blue{
+  color: #748cab;
+}
+
+.residents-container{
+  margin-top: 4rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.resident-card{
+  display: flex;
+  gap: 1.5rem;
+  width: 30rem;
+  height: 15rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px #f6aa1c;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.resident-card img{
+  width: 12rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+
+
+
+@media screen and (min-width:375px){
+  section{
+    padding: 0;
+  }
+
+  header{
+    height: 130px;
+  }
+
+  .title{
+    font-size: 25px;
+  }
+
+  .seeker input{
+    width: 14rem;
+    padding: 5px 0;
+  }
+
+  .seeker button{
+    padding: 3px;
+    margin-bottom: 0;
+  }
+
+  .name-location{
+    font-size: 20px;
+  }
+
+  .location-info{
+    font-size: 14px;
+  }
+
+
+  .residents-container{
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .resident-card{
+    gap: 1rem;
+    width: 20rem;
+    height: 10rem;
+    padding: .5rem;
+    margin: 0 auto;
+  }
+
+  .resident-card img{
+    width: 10rem;
+  }
+
+  .info{
+    font-size: 14px;
+  }
+
+}
+

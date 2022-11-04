@@ -21,119 +21,118 @@
   background-color: #432818;
 }
 
-header{
-  background: url('./assets/876591.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 center;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
+@media screen and (min-width: 768px){
+  header{
+    background: url('./assets/876591.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 center;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  section{
+    padding: 0 5rem;
+  }
+  
+  .title{
+    font-family: var(--title);
+    color: #ffd166;
+    font-size: 45px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  
+  .seeker input{
+    width: 40rem;
+    padding: 10px 0;
+    background-color: var(--lightBrown);
+    color: #fff;
+    border: none;
+    text-align: center;
+  }
+  
+  .seeker button{
+    padding: 10px;
+    width: 75px;
+    background-color: var(--brown);
+    color: #fff;
+    border-color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .seeker input:focus{
+    outline: none;
+  }
+  
+  .seeker{
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .name-location{
+    font-size: 30px;
+    color: #ffd166;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+  }
+  
+  .location-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    font-size: 18px;
+  }
+  
+  .yellow{
+    color: #e09f3e;
+  }
+  
+  .blue{
+    color: #748cab;
+  }
+  
+  .residents-container{
+    margin-top: 4rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    margin-bottom: 5rem;
+  }
+  
+  .resident-card{
+    display: flex;
+    gap: 1.5rem;
+    width: 30rem;
+    height: 15rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px #f6aa1c;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .resident-card img{
+    width: 12rem;
+  }
+  
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    text-align: left;
+  }
 }
 
-section{
-  padding: 0 5rem;
-}
 
-.title{
-  font-family: var(--title);
-  color: #ffd166;
-  font-size: 45px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-
-.seeker input{
-  width: 40rem;
-  padding: 10px 0;
-  background-color: var(--lightBrown);
-  color: #fff;
-  border: none;
-  text-align: center;
-}
-
-.seeker button{
-  padding: 10px;
-  width: 75px;
-  background-color: var(--brown);
-  color: #fff;
-  border-color: #fff;
-  border-radius: 5px;
-  font-size: 15px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.seeker input:focus{
-  outline: none;
-}
-
-.seeker{
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.name-location{
-  font-size: 30px;
-  color: #ffd166;
-  font-family: 'Patrick Hand', cursive;
-  text-align: center;
-}
-
-.location-info{
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem 0;
-  font-size: 18px;
-}
-
-.yellow{
-  color: #e09f3e;
-}
-
-.blue{
-  color: #748cab;
-}
-
-.residents-container{
-  margin-top: 4rem;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 4rem;
-  margin-bottom: 5rem;
-}
-
-.resident-card{
-  display: flex;
-  gap: 1.5rem;
-  width: 30rem;
-  height: 15rem;
-  padding: 1rem;
-  box-shadow: 0 0 10px #f6aa1c;
-  border-radius: 10px;
-  text-align: left;
-}
-
-.resident-card img{
-  width: 12rem;
-}
-
-.info{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 20px;
-  text-align: left;
-}
-
-
-
-
-
-@media screen and (max-width:375px){
+@media screen and (min-width:375px){
   section{
     padding: 0;
   }

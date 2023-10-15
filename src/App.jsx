@@ -34,7 +34,7 @@ function App() {
         <h1 className='title'>Rick and Morty Wiki</h1>
 
         <div className='seeker'>
-          <input type="text" value={locationId} onChange={e => setLocationId(e.target.value)}/>
+          <input type="text" value={locationId} placeholder="Type a location Id" onChange={e => setLocationId(e.target.value)}/>
           <button onClick={SearchLocation}>Search</button>
         </div>
 

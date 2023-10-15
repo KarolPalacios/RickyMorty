@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   
   const [location, setLocation] = useState({})
-  const [locationId, setLocationId] = useState("Type a location Id")
+  const [locationId, setLocationId] = useState("")
 
   useEffect(() => {
 
